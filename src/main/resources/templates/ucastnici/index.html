@@ -36,7 +36,7 @@
         <tbody>
         <tr th:each="ucastnik, iterStat : ${ucastnici}">
             <td>
-                <i class="las la-venus" style="color: red;" th:if="${ucastnik.pohlavi == T(cz.czechitas.java2webapps.lekce4.entity.Pohlavi).ZENA}"></i>
+                <i class="las la-venus" style="color: #ff0000;" th:if="${ucastnik.pohlavi == T(cz.czechitas.java2webapps.lekce4.entity.Pohlavi).ZENA}"></i>
                 <i class="las la-mars"  style="color: blue;" th:if="${ucastnik.pohlavi == T(cz.czechitas.java2webapps.lekce4.entity.Pohlavi).MUZ}"></i>
             </td>
             <td th:text="${ucastnik.jmeno}">Medvídek</td>
